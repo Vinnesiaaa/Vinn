@@ -1,0 +1,239 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo img {
+  vertical-align: middle;
+}
+
+.logo span {
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1rem;
+}
+
+.nav-links a:hover {
+  color: #007bff;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+.hamburger {
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: none;
+}
+
+.hero {
+  text-align: center;
+  padding: 4rem 2rem;
+  background-color: #f0f8ff;
+  min-height: 70vh;
+}
+
+.welcome h1 {
+  font-size: 2rem;
+  margin: 1rem 0;
+  color: #333;
+}
+
+.welcome .wave {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.services {
+  list-style: none;
+  padding: 0;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.services li {
+  margin: 0.5rem 0;
+}
+
+.explore h2 {
+  font-size: 1.5rem;
+  margin: 1.5rem 0;
+  color: #333;
+}
+
+.links {
+  list-style: none;
+  padding: 0;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.links li {
+  margin: 0.5rem 0;
+}
+
+.links a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #333;
+  color: #fff;
+  width: 100%;
+}
+
+.footer-content a {
+  color: #fff;
+  text-decoration: underline;
+  margin: 0 0.5rem;
+}
+
+.footer-content a:hover {
+  color: #ddd;
+}
+
+/* Responsivitas */
+@media (max-width: 768px) { /* Mobile */
+  .navbar {
+    padding: 1rem;
+  }
+
+  .logo span {
+    font-size: 1.4rem;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    flex-direction: column;
+    width: 150px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li {
+    margin: 0.5rem 0;
+  }
+
+  .hero {
+    padding: 2rem 1rem;
+  }
+
+  .welcome h1 {
+    font-size: 1.5rem;
+  }
+
+  .welcome .wave {
+    font-size: 1.2rem;
+  }
+
+  .services {
+    font-size: 1rem;
+  }
+
+  .explore h2 {
+    font-size: 1.2rem;
+  }
+
+  .links {
+    font-size: 1rem;
+  }
+
+  footer {
+    position: relative;
+  }
+}
+
+@media (min-width: 769px) { /* Tablet and Desktop */
+  .menu-toggle {
+    display: none;
+  }
+
+  .nav-links {
+    display: flex;
+  }
+
+  .logo span {
+    font-size: 1.7rem;
+  }
+
+  .hero {
+    padding: 6rem 4rem;
+  }
+
+  .welcome h1 {
+    font-size: 2.5rem;
+  }
+
+  .welcome .wave {
+    font-size: 1.8rem;
+  }
+
+  .services {
+    font-size: 1.2rem;
+  }
+
+  .explore h2 {
+    font-size: 1.8rem;
+  }
+
+  .links {
+    font-size: 1.2rem;
+  }
+}
