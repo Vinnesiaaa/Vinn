@@ -48,12 +48,12 @@ body {
 }
 
 .buttons .btn {
-  display: flex;
+  display: inline-block;
   margin: 10px;
-  padding: 12px 25px;
+  padding: 12px 15px;
   background-color: white;
   color: #161616;
-  text-decoration: column;
+  text-decoration: none;
   border-radius: 5px;
   font-weight: bold;
   transition: background 0.3s;
