@@ -2,8 +2,8 @@
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
-  background: #ffffff;
-  color: #333;
+  background: linear-gradient(to right, #161616, #1c1b2b);
+  color: #f0f0f0;
 }
 
 .container {
@@ -14,14 +14,27 @@ body {
 }
 
 .hero {
-  background: #007BFF;
+  background: linear-gradient(to right, #00FF99, #9900cc);
   color: white;
   padding: 60px 20px;
 }
 
-.logo {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
+.logo-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.logo-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.logo-text {
+  font-size: 2.2rem;
+  font-weight: bold;
 }
 
 .hero h2 {
@@ -39,14 +52,19 @@ body {
   margin: 10px;
   padding: 12px 25px;
   background-color: white;
-  color: #007BFF;
+  color: #161616;
   text-decoration: none;
   border-radius: 5px;
   font-weight: bold;
+  transition: background 0.3s;
+}
+
+.buttons .btn:hover {
+  background-color: #ddd;
 }
 
 .features {
-  background: #f4f4f4;
+  background: #2c2c2c;
   padding: 40px 20px;
 }
 
@@ -62,6 +80,7 @@ body {
 }
 
 .about-links {
+  background: #1c1c1c;
   padding: 40px 20px;
 }
 
@@ -75,12 +94,70 @@ body {
 }
 
 .footer-links a {
-  color: #007BFF;
+  color: #00FF99;
   text-decoration: none;
 }
 
 .footer {
-  background: #222;
-  color: #ccc;
+  background: #111;
+  color: #aaa;
   padding: 20px 0;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animated {
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Responsive Layouts */
+@media (max-width: 768px) {
+  .feature-list {
+    flex-direction: column;
+  }
+  .logo-text {
+    font-size: 1.5rem;
+  }
+  .buttons .btn {
+    width: 100%;
+    max-width: 300px;
+    margin: 10px auto;
+    display: block;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 10px;
+  }
+  .hero h2 {
+    font-size: 1.5rem;
+  }
+  .hero p {
+    font-size: 1rem;
+  }
+  .logo-icon {
+    width: 30px;
+    height: 30px;
+  }
+  .logo-wrap {
+    gap: 6px;
+  }
+}
+
+.social-icons {
+  margin-top: 15px;
+}
+.social-icons a {
+  margin: 0 10px;
+  font-size: 1.5rem;
+  color: #00FF99;
+  text-decoration: none;
+  transition: opacity 0.3s;
+}
+.social-icons a:hover {
+  opacity: 0.7;
 }
