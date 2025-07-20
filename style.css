@@ -48,12 +48,12 @@ body {
 }
 
 .buttons .btn {
-  display: inline-block;
+  display: flex;
   margin: 10px;
   padding: 12px 25px;
   background-color: white;
   color: #161616;
-  text-decoration: none;
+  text-decoration: column;
   border-radius: 5px;
   font-weight: bold;
   transition: background 0.3s;
@@ -197,7 +197,7 @@ body {
     font-size: 1rem;
     padding: 0.6rem 1rem;
     width: 100%;
-    max-width: 300px;
+    max-width: 280px;
     margin: 0 auto;
   }
 
